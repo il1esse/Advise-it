@@ -61,13 +61,13 @@ function csvToArray($csvFile){
 
     if ($_SESSION['username'] == 'user1')
     {
-        $csvFile = 'top100ratings.csv';
+        $csvFile = '../csv/top100ratings.csv';
     }else if ($_SESSION['username'] == 'user2')
     {
-        $csvFile = 'top100ratings_usr2.csv';
+        $csvFile = '../csv/top100ratings_usr2.csv';
     }else
     {
-        $csvFile = 'top100ratings_usr3.csv';
+        $csvFile = '../csv/top100ratings_usr3.csv';
     }
     $csv = csvToArray($csvFile);
     
